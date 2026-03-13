@@ -1,0 +1,23 @@
+.time-display{font-size: 2rem; text-align:center;}
+.dropdowns{display:flex;gap: 0.5em;margin:1rem 0;}
+.actions{display:flex;gap:0.5rem;justify-content:center;margin-bottom:1rem;}
+.bell-wrapper{display:flex;justify-content:center;}
+.bell{width:50px;height:50px;fill:darkorange;transform-origin:top center;}
+.ringing .bell{animation:swing 0.7s ease-in-out infinite;}
+@keyframes swing{
+    0%{transform: rotate(0deg);}
+     20%{transform:rotate(-12deg);}
+     40%{transform:rotate(12deg);}
+     60%{transform:rotate(0deg);};
+     80%{transform:rotate(-12deg);}
+     100%{transform:rotate(0deg);}}
+     .combo-row{
+        display:flex;
+        justify-content:center;
+        gap:1rem;
+        margin:10px 0;
+     }
+     .combo-bigger{
+        font-size: 1.5rem;
+        width: 300px;
+     }

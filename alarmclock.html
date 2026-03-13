@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Alarm Clock" >
+       <div class="time-display">{currentTimeString}</div> 
+       <div class="dropdowns combo-row combo-bigger">
+        <c-resuable-dropdown label="Hour" name="hour" value={selectedHour} options={houroptions} onchange={handledropdown}></c-resuable-dropdown>
+        <c-resuable-dropdown label="Minute" name="minute" value={selectedMinute} options={minuteoptions} onchange={handledropdown}></c-resuable-dropdown>
+        <c-resuable-dropdown label="AM/PM" name="ampm" value={selectedampm} options={ampmoptions} onchange={handledropdown}></c-resuable-dropdown>
+        </div>
+        <div class="actions">
+            <lightning-button label="set Alarm" onclick={handlesetalarm}></lightning-button>
+            <lightning-button label="Clear" onclick={handleclearalarm}></lightning-button>
+        </div>
+        <div class={bellWrapperClass}>
+            <img src={alarmpic} alt="Alarm Bell" class="bell" />
+            
+            </div>
+    </lightning-card>
+</template>
